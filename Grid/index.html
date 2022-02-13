@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+        }
+        .wrapper .box {
+            background-color: #eee;
+        }
+        .wrapper .box:nth-child(1){
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .wrapper .box:nth-child(odd){
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio eveniet voluptatibus at perspiciatis necessitatibus blanditiis ea nulla natus hic sed error saepe voluptas eaque ex, voluptates ullam ducimus tempora vitae quas dicta perferendis. Atque culpa quisquam et modi quasi!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias blanditiis quidem sed qui odio pariatur distinctio labore totam quaerat facere minus expedita voluptate enim quisquam atque suscipit, harum adipisci.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi deleniti veniam, praesentium rem inventore aperiam error omnis quas necessitatibus. Recusandae odio atque officiis nulla praesentium in magnam optio voluptatum nisi, illum ipsa ut? Autem repellendus obcaecati ipsam incidunt. Impedit id laboriosam quas voluptatibus perferendis maiores, repellendus itaque consectetur est quibusdam sit blanditiis dignissimos delectus repudiandae veniam quidem adipisci perspiciatis nisi.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum autem repellat neque? Doloremque sit cumque maxime in. Deleniti atque ullam, delectus aliquam fuga neque tempora reprehenderit quia magni, quis suscipit ea autem perspiciatis debitis culpa, perferendis explicabo? Reiciendis, soluta et?
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</div>
+    </div>
+</body>
+</html>
